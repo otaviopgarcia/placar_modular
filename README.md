@@ -1,16 +1,32 @@
-# React + Vite
+# 🏆 Placar Modular
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicação desenvolvida em React para simular um placar de jogo com controle de pontuação, posse de bola e histórico de jogadas.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido como exercício prático da disciplina de Desenvolvimento Web, com foco na utilização de componentes, `props` e gerenciamento de estado com `useState`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Sobre o projeto
 
-## React Compiler
+A aplicação permite acompanhar a pontuação de dois times, controlar qual time possui a bola e registrar as jogadas realizadas durante a partida.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto utiliza uma arquitetura modular, separando a interface em componentes reutilizáveis.
 
-## Expanding the Oxlint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Exibição da pontuação dos Times A e B
+- Pontuação de +1, +2 e +3 pontos
+- Controle de posse de bola
+- Indicação do time que está atacando
+- Histórico das jogadas realizadas
+- Componentização da aplicação
+- Gerenciamento de estado com `useState`
+
+## 🧩 Estrutura do projeto
+
+```text
+src/
+├── components/
+│   ├── Placar.jsx
+│   ├── AcoesJogo.jsx
+│   └── Historico.jsx
+├── App.jsx
+└── main.jsx
